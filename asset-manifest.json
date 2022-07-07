@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rest-countries-api/static/css/main.bdaa7ffd.css",
-    "main.js": "/rest-countries-api/static/js/main.121463aa.js",
-    "static/media/undraw_around_the_world_re_rb1p.svg": "/rest-countries-api/static/media/undraw_around_the_world_re_rb1p.d10acc04089530d68fb79b3ede75655b.svg",
-    "index.html": "/rest-countries-api/index.html",
-    "main.bdaa7ffd.css.map": "/rest-countries-api/static/css/main.bdaa7ffd.css.map",
-    "main.121463aa.js.map": "/rest-countries-api/static/js/main.121463aa.js.map"
+    "main.css": "/RestCountriesApi/static/css/main.bdaa7ffd.css",
+    "main.js": "/RestCountriesApi/static/js/main.fbc1f0ba.js",
+    "static/media/undraw_around_the_world_re_rb1p.svg": "/RestCountriesApi/static/media/undraw_around_the_world_re_rb1p.d10acc04089530d68fb79b3ede75655b.svg",
+    "index.html": "/RestCountriesApi/index.html",
+    "main.bdaa7ffd.css.map": "/RestCountriesApi/static/css/main.bdaa7ffd.css.map",
+    "main.fbc1f0ba.js.map": "/RestCountriesApi/static/js/main.fbc1f0ba.js.map"
   },
   "entrypoints": [
     "static/css/main.bdaa7ffd.css",
-    "static/js/main.121463aa.js"
+    "static/js/main.fbc1f0ba.js"
   ]
 }
