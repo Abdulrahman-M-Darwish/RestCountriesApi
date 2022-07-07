@@ -1,0 +1,85 @@
+.details {
+  font-size: 16px;
+  padding: 75px 0;
+  .container {
+    gap: 100px;
+    padding: 0 50px;
+    button {
+      width: fit-content;
+      padding: 8px 28px;
+      gap: 10px;
+      font-size: 1em;
+      transition: 0.3s;
+      svg {
+        transition: 0.3s;
+        pointer-events: none;
+      }
+      &:hover {
+        letter-spacing: 3px;
+        svg {
+          transform: translateX(-5px);
+          border-radius: 6px;
+        }
+      }
+    }
+    .info {
+      @include minMedia(768) {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+      }
+      .flag {
+        width: 100%;
+        @include minMedia(768) {
+          flex: 1.2;
+          min-width: 50%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .inner-info {
+        margin-top: 50px;
+        @include minMedia(768) {
+          margin-top: 0;
+          flex: 1;
+        }
+        .title {
+          font-weight: 800;
+          margin-bottom: 32px;
+          font-size: 2em;
+        }
+        h3 {
+          font-weight: 300;
+          span {
+            font-weight: 800;
+          }
+        }
+        button {
+          flex: 1;
+        }
+        .about {
+          gap: 80px;
+          margin-bottom: 50px;
+          @include minMedia(992) {
+            flex-direction: row;
+          }
+          .col {
+            gap: 16px;
+          }
+        }
+        .border {
+          gap: 24px;
+          flex-wrap: wrap;
+          @include minMedia(768) {
+            flex-direction: row;
+          }
+          .countries {
+            flex: 1;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

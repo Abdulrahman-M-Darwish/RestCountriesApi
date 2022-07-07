@@ -1,0 +1,69 @@
+.App.light {
+  background-color: $VeryLightGray;
+  .nav {
+    box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.3);
+    background-color: $White;
+    h1 {
+      color: $VeryDarkBlue;
+    }
+  }
+  .main {
+    button {
+      box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+      background-color: white;
+      color: $VeryDarkBlue;
+    }
+  }
+  .details {
+    button {
+      color: $VeryDarkBlue;
+      box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+      background-color: white;
+    }
+    .title {
+      color: $VeryDarkBlue;
+    }
+    h3 {
+      color: $VeryDarkBlue;
+    }
+  }
+  .countries {
+    form {
+      box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+      background-color: $White;
+      input {
+        color: $VeryDarkBlue;
+        &::placeholder {
+          color: $DarkGray;
+        }
+      }
+      button {
+        color: $DarkGray;
+      }
+    }
+    .filter {
+      color: $VeryDarkBlue;
+      span {
+        box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+        background-color: white;
+      }
+      ul {
+        box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+        background-color: $White;
+        li {
+          &::after {
+            background-image: linear-gradient(180deg, cyan, violet, red);
+          }
+        }
+      }
+    }
+    .card {
+      box-shadow: 0 0 16px 0 rgba($color: $DarkGray, $alpha: 0.5);
+      background-color: white;
+      h2,
+      h3 {
+        color: $VeryDarkBlue;
+      }
+    }
+  }
+}

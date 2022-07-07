@@ -1,0 +1,19 @@
+.nav {
+  padding: 24px 16px;
+  @include minMedia(576) {
+    padding: 24px 70px;
+  }
+  h1 {
+    font-size: 1em;
+    font-weight: 800;
+    @include minMedia(576) {
+      font-size: 1.8em;
+    }
+  }
+  button {
+    gap: 10px;
+    @include minMedia(576) {
+      font-size: 1em;
+    }
+  }
+}

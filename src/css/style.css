@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: "Nunito Sans", sans-serif; }
+
+.flex {
+  display: flex; }
+
+.flex-col {
+  flex-direction: column; }
+
+.justify-between {
+  justify-content: space-between; }
+
+.items-center {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.nav {
+  padding: 24px 16px; }
+  @media screen and (min-width: 576px) {
+    .nav {
+      padding: 24px 70px; } }
+  .nav h1 {
+    font-size: 1em;
+    font-weight: 800; }
+    @media screen and (min-width: 576px) {
+      .nav h1 {
+        font-size: 1.8em; } }
+  .nav button {
+    gap: 10px; }
+    @media screen and (min-width: 576px) {
+      .nav button {
+        font-size: 1em; } }
+
+.countries {
+  gap: 16px; }
+  .countries .container {
+    padding: 32px 16px; }
+    @media screen and (min-width: 576px) {
+      .countries .container {
+        padding: 32px 70px; } }
+    .countries .container .find {
+      gap: 50px;
+      margin-bottom: 100px; }
+      @media screen and (min-width: 576px) {
+        .countries .container .find {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; } }
+      .countries .container .find form {
+        overflow: hidden;
+        border-radius: 6px;
+        max-width: 470px;
+        flex: 1; }
+        .countries .container .find form input {
+          border: none;
+          outline: none;
+          padding: 20px;
+          flex: 1; }
+        .countries .container .find form button {
+          margin: 0 24px; }
+      .countries .container .find .filter {
+        width: 245px;
+        position: relative; }
+        .countries .container .find .filter span {
+          padding: 16px;
+          border-radius: 6px;
+          font-weight: 600; }
+          .countries .container .find .filter span svg {
+            transition: 0.3s; }
+        .countries .container .find .filter ul {
+          gap: 10px;
+          border-radius: 6px;
+          padding: 24px;
+          border-radius: 6px;
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          pointer-events: none;
+          transform: translateY(110%);
+          transition: 0.3s; }
+          .countries .container .find .filter ul li {
+            font-weight: 600;
+            position: relative;
+            cursor: pointer; }
+            .countries .container .find .filter ul li::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -24px;
+              width: 3px;
+              height: 100%;
+              transform: translateY(15px);
+              opacity: 0;
+              transition: 0.3s; }
+            .countries .container .find .filter ul li:hover::after {
+              transform: translateY(0);
+              opacity: 0.5; }
+            .countries .container .find .filter ul li.active::after {
+              transform: translateY(0);
+              opacity: 1; }
+        .countries .container .find .filter.active ul {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateY(100%); }
+        .countries .container .find .filter.active svg {
+          transform: rotate(180deg); }
+    .countries .container .countries {
+      gap: 100px 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(auto, 270px));
+      justify-content: space-around; }
+      @media screen and (max-width: 575px) {
+        .countries .container .countries {
+          padding: 0 24px; } }
+      .countries .container .countries .card {
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.3s;
+        cursor: pointer; }
+        .countries .container .countries .card .flag {
+          pointer-events: none;
+          height: 200px; }
+          .countries .container .countries .card .flag img {
+            width: 100%;
+            height: 100%; }
+        .countries .container .countries .card:hover {
+          transform: scale(1.08); }
+        .countries .container .countries .card .info {
+          pointer-events: none;
+          padding: 24px 24px 50px; }
+          .countries .container .countries .card .info h2 {
+            margin-bottom: 16px;
+            font-weight: 800; }
+          .countries .container .countries .card .info h3 {
+            font-weight: 300;
+            font-size: 1em; }
+            .countries .container .countries .card .info h3:not(:last-of-type) {
+              margin-bottom: 10px; }
+            .countries .container .countries .card .info h3 span {
+              font-weight: 600; }
+
+.details {
+  font-size: 16px;
+  padding: 75px 0; }
+  .details .container {
+    gap: 100px;
+    padding: 0 50px; }
+    .details .container button {
+      width: fit-content;
+      padding: 8px 28px;
+      gap: 10px;
+      font-size: 1em;
+      transition: 0.3s; }
+      .details .container button svg {
+        transition: 0.3s;
+        pointer-events: none; }
+      .details .container button:hover {
+        letter-spacing: 3px; }
+        .details .container button:hover svg {
+          transform: translateX(-5px);
+          border-radius: 6px; }
+    @media screen and (min-width: 768px) {
+      .details .container .info {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px; } }
+    .details .container .info .flag {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .details .container .info .flag {
+          flex: 1.2;
+          min-width: 50%; } }
+      .details .container .info .flag img {
+        width: 100%; }
+    .details .container .info .inner-info {
+      margin-top: 50px; }
+      @media screen and (min-width: 768px) {
+        .details .container .info .inner-info {
+          margin-top: 0;
+          flex: 1; } }
+      .details .container .info .inner-info .title {
+        font-weight: 800;
+        margin-bottom: 32px;
+        font-size: 2em; }
+      .details .container .info .inner-info h3 {
+        font-weight: 300; }
+        .details .container .info .inner-info h3 span {
+          font-weight: 800; }
+      .details .container .info .inner-info button {
+        flex: 1; }
+      .details .container .info .inner-info .about {
+        gap: 80px;
+        margin-bottom: 50px; }
+        @media screen and (min-width: 992px) {
+          .details .container .info .inner-info .about {
+            flex-direction: row; } }
+        .details .container .info .inner-info .about .col {
+          gap: 16px; }
+      .details .container .info .inner-info .border {
+        gap: 24px;
+        flex-wrap: wrap; }
+        @media screen and (min-width: 768px) {
+          .details .container .info .inner-info .border {
+            flex-direction: row; } }
+        .details .container .info .inner-info .border .countries {
+          flex: 1;
+          flex-wrap: wrap; }
+
+.main {
+  min-height: calc(100vh - 87px);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 24px;
+  position: relative; }
+  .main .img img {
+    height: 60vh; }
+  .main h1 {
+    font-weight: 600; }
+  .main button {
+    width: fit-content;
+    padding: 8px 23px;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1em;
+    transition: 0.3s; }
+    .main button svg {
+      transition: 0.3s; }
+    .main button:hover {
+      letter-spacing: 3px; }
+      .main button:hover svg {
+        transform: translateX(-5px);
+        border-radius: 6px; }
+
+.App.dark {
+  background-color: #202c37; }
+  .App.dark .nav {
+    box-shadow: 0 5px 16px 0 rgba(17, 21, 23, 0.3);
+    background-color: #2b3945; }
+    .App.dark .nav button {
+      color: white; }
+    .App.dark .nav h1 {
+      color: white; }
+  .App.dark .main button {
+    box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+    background-color: #2b3945;
+    color: white; }
+  .App.dark .details button {
+    color: white;
+    box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+    background-color: #2b3945; }
+  .App.dark .details .title {
+    color: white; }
+  .App.dark .details h3 {
+    color: white; }
+  .App.dark .countries form {
+    box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+    background-color: #2b3945; }
+    .App.dark .countries form input {
+      color: white;
+      background-color: #2b3945; }
+      .App.dark .countries form input::placeholder {
+        color: white; }
+    .App.dark .countries form button {
+      color: white; }
+  .App.dark .countries .filter {
+    color: white; }
+    .App.dark .countries .filter span {
+      box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+      background-color: #2b3945; }
+    .App.dark .countries .filter ul {
+      box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+      background-color: #2b3945; }
+      .App.dark .countries .filter ul li::after {
+        background-image: linear-gradient(180deg, cyan, violet, red); }
+  .App.dark .countries .card {
+    box-shadow: 0 0 16px 0 rgba(17, 21, 23, 0.5);
+    background-color: #2b3945; }
+    .App.dark .countries .card h2,
+    .App.dark .countries .card h3 {
+      color: white; }
+
+.App.light {
+  background-color: #fafafa; }
+  .App.light .nav {
+    box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.3);
+    background-color: white; }
+    .App.light .nav h1 {
+      color: #111517; }
+  .App.light .main button {
+    box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+    background-color: white;
+    color: #111517; }
+  .App.light .details button {
+    color: #111517;
+    box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+    background-color: white; }
+  .App.light .details .title {
+    color: #111517; }
+  .App.light .details h3 {
+    color: #111517; }
+  .App.light .countries form {
+    box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+    background-color: white; }
+    .App.light .countries form input {
+      color: #111517; }
+      .App.light .countries form input::placeholder {
+        color: #858585; }
+    .App.light .countries form button {
+      color: #858585; }
+  .App.light .countries .filter {
+    color: #111517; }
+    .App.light .countries .filter span {
+      box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+      background-color: white; }
+    .App.light .countries .filter ul {
+      box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+      background-color: white; }
+      .App.light .countries .filter ul li::after {
+        background-image: linear-gradient(180deg, cyan, violet, red); }
+  .App.light .countries .card {
+    box-shadow: 0 0 16px 0 rgba(133, 133, 133, 0.5);
+    background-color: white; }
+    .App.light .countries .card h2,
+    .App.light .countries .card h3 {
+      color: #111517; }
+
+/*# sourceMappingURL=style.css.map */

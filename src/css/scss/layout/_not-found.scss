@@ -1,0 +1,36 @@
+.main {
+  min-height: calc(100vh - 87px);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 24px;
+  position: relative;
+  .img {
+    img {
+      height: 60vh;
+    }
+  }
+  h1 {
+    font-weight: 600;
+  }
+  button {
+    width: fit-content;
+    padding: 8px 23px;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1em;
+    transition: 0.3s;
+    svg {
+      transition: 0.3s;
+    }
+    &:hover {
+      letter-spacing: 3px;
+      svg {
+        transform: translateX(-5px);
+        border-radius: 6px;
+      }
+    }
+  }
+}
