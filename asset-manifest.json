@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RestCountriesApi/static/css/main.bdaa7ffd.css",
-    "main.js": "/RestCountriesApi/static/js/main.fbc1f0ba.js",
+    "main.js": "/RestCountriesApi/static/js/main.9c0d8932.js",
     "static/media/undraw_around_the_world_re_rb1p.svg": "/RestCountriesApi/static/media/undraw_around_the_world_re_rb1p.d10acc04089530d68fb79b3ede75655b.svg",
     "index.html": "/RestCountriesApi/index.html",
     "main.bdaa7ffd.css.map": "/RestCountriesApi/static/css/main.bdaa7ffd.css.map",
-    "main.fbc1f0ba.js.map": "/RestCountriesApi/static/js/main.fbc1f0ba.js.map"
+    "main.9c0d8932.js.map": "/RestCountriesApi/static/js/main.9c0d8932.js.map"
   },
   "entrypoints": [
     "static/css/main.bdaa7ffd.css",
-    "static/js/main.fbc1f0ba.js"
+    "static/js/main.9c0d8932.js"
   ]
 }
