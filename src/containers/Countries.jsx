@@ -1,24 +1,23 @@
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FaAngleUp } from "react-icons/fa";
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import NotFound from "./NotFound";
-import useFetch from "../hooks/useFetch";
 import Country from "../components/Country";
 import CountryDetails from "./CountryDetails";
+import { CountriesContext } from "../context/CountriesContext";
 
 const Countries = () => {
+	const {
+		data,
+		setData,
+		allData,
+		searchValue,
+		setSearchValue,
+		countryDetails,
+		setCountryDetails,
+	} = useContext(CountriesContext);
 	const [filters, setFilters] = useState(false);
-	const [data, setData] = useFetch("https://restcountries.com/v3.1/all");
-	const [allData] = useFetch("https://restcountries.com/v3.1/all");
-	const [searchValue, setSearchValue] = useState("");
-	const [countryDetails, setCountryDetails] = useState(null);
 	const list = useRef([]);
-	const handelClick = (e) => {
-		const filterd = allData.filter(
-			(country) => country.cca3 === e.target.textContent
-		);
-		setCountryDetails(filterd[0]);
-	};
 	const serchForCountry = (e) => {
 		e.preventDefault();
 		const filterd = allData.filter((country) =>
@@ -44,16 +43,10 @@ const Countries = () => {
 		setCountryDetails(data[id]);
 	};
 	if (data.length <= 0) {
-		return <NotFound country={searchValue} setData={setData} />;
+		return <NotFound />;
 	}
 	if (countryDetails) {
-		return (
-			<CountryDetails
-				setCountryDetails={setCountryDetails}
-				country={countryDetails}
-				handelClick={handelClick}
-			/>
-		);
+		return <CountryDetails />;
 	}
 	return (
 		<div className="countries flex flex-col">
