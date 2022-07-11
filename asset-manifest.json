@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/RestCountriesApi/static/css/main.5f254a0e.css",
-    "main.js": "/RestCountriesApi/static/js/main.71bfc490.js",
-    "static/media/undraw_around_the_world_re_rb1p.svg": "/RestCountriesApi/static/media/undraw_around_the_world_re_rb1p.d10acc04089530d68fb79b3ede75655b.svg",
-    "index.html": "/RestCountriesApi/index.html",
-    "main.5f254a0e.css.map": "/RestCountriesApi/static/css/main.5f254a0e.css.map",
-    "main.71bfc490.js.map": "/RestCountriesApi/static/js/main.71bfc490.js.map"
+    "main.css": "/static/css/main.5f254a0e.css",
+    "main.js": "/static/js/main.18c0f4c8.js",
+    "static/media/undraw_around_the_world_re_rb1p.svg": "/static/media/undraw_around_the_world_re_rb1p.d10acc04089530d68fb79b3ede75655b.svg",
+    "index.html": "/index.html",
+    "main.5f254a0e.css.map": "/static/css/main.5f254a0e.css.map",
+    "main.18c0f4c8.js.map": "/static/js/main.18c0f4c8.js.map"
   },
   "entrypoints": [
     "static/css/main.5f254a0e.css",
-    "static/js/main.71bfc490.js"
+    "static/js/main.18c0f4c8.js"
   ]
 }
